@@ -1,0 +1,11 @@
+<resources>
+    <!--To support multi language, we must have to write all the string in string.xml-->
+    <string name="app_name">Multi-Language Support</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Do not have account? Sign Up </string>
+    <string name="changeLang">Change Language </string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">多言語サポート</string>
+
+    <string name="welcome">ようこそ</string>
+    <string name="email">Eメール</string>
+    <string name="password">パスワード</string>
+    <string name="login">ログイン</string>
+    <string name="signup">アカウントを持っていないのですか？ サインアップ</string>
+    <string name="changeLang">言語を変えてください</string>
+</resources>

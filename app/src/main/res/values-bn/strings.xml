@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">মাল্টি ভাষা সাপোর্ট</string>
+
+    <string name="welcome"> স্বাগতম</string>
+    <string name="email">ইমেইল</string>
+    <string name="password">পাসওয়ার্ড</string>
+    <string name="login">লগইন</string>
+    <string name="signup">একটি একাউন্ট আছে কি না? নিবন্ধন করুন</string>
+    <string name="changeLang">ভাষা পরিবর্তন করুন</string>
+</resources>

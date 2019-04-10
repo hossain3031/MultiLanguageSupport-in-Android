@@ -8,10 +8,26 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import java.util.Locale;
+
+
+        //Important methods
+
+        /*Locale.getDefault().getLanguage()       ---> en
+        Locale.getDefault().getISO3Language()   ---> eng
+        Locale.getDefault().getCountry()        ---> US
+        Locale.getDefault().getISO3Country()    ---> USA
+        Locale.getDefault().getDisplayCountry() ---> United States
+        Locale.getDefault().getDisplayName()    ---> English (United States)
+        Locale.getDefault().toString()          ---> en_US
+        Locale.getDefault().getDisplayLanguage()---> English*/
+
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(getResources().getString(R.string.app_name));
 
-
         Button changeMyLanguageBtn = findViewById(R.id.changeMyLanguage);
 
         changeMyLanguageBtn.setOnClickListener(new View.OnClickListener() {
@@ -35,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 
     private void showChangeLanguageDialog() {
@@ -64,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                     setLocal("en");
                     recreate();
                 }
-
                 dialog.dismiss();
 
             }
@@ -88,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadLocalLang() {
         SharedPreferences sharedPreferences = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
-        String language = sharedPreferences.getString("My_Lang", "");
+        String language = sharedPreferences.getString("My_Lang", Locale.getDefault().getLanguage());
         setLocal(language);
     }
 
